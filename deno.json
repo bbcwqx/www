@@ -1,0 +1,32 @@
+{
+  "tasks": {
+    "check": "deno fmt --check . && deno lint . && deno check",
+    "dev": "deno run -A --watch=static/,routes/ dev.ts",
+    "build": "deno run -A dev.ts build",
+    "start": "deno serve -A _fresh/server.js",
+    "update": "deno run -A -r jsr:@fresh/update ."
+  },
+  "imports": {
+    "@fresh/plugin-tailwind": "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.9",
+    "@preact/signals": "npm:@preact/signals@^2.2.1",
+    "@tailwindcss/postcss": "npm:@tailwindcss/postcss@^4.1.10",
+    "basecoat-css": "npm:basecoat-css@^0.3.1",
+    "fresh": "jsr:@fresh/core@^2.0.0-alpha.57",
+    "preact": "npm:preact@^10.27.0",
+    "tailwindcss": "npm:tailwindcss@^4.1.10",
+    "postcss": "npm:postcss@^8.5.6"
+  },
+  "nodeModulesDir": "auto",
+  "exclude": ["**/_fresh/*"],
+  "lint": {
+    "rules": {
+      "tags": ["fresh", "recommended"]
+    }
+  },
+  "compilerOptions": {
+    "lib": ["dom", "dom.asynciterable", "dom.iterable", "deno.ns"],
+    "jsx": "precompile",
+    "jsxImportSource": "preact",
+    "jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head"]
+  }
+}
