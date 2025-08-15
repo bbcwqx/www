@@ -11,22 +11,41 @@
     "@preact/signals": "npm:@preact/signals@^2.2.1",
     "@tailwindcss/postcss": "npm:@tailwindcss/postcss@^4.1.10",
     "basecoat-css": "npm:basecoat-css@^0.3.1",
+    "eslint": "npm:eslint@^9.33.0",
+    "eslint-plugin-better-tailwindcss": "npm:eslint-plugin-better-tailwindcss@^3.7.4",
     "fresh": "jsr:@fresh/core@^2.0.0-alpha.57",
     "preact": "npm:preact@^10.27.0",
     "tailwindcss": "npm:tailwindcss@^4.1.10",
     "postcss": "npm:postcss@^8.5.6"
   },
   "nodeModulesDir": "auto",
-  "exclude": ["**/_fresh/*"],
+  "exclude": [
+    "**/_fresh/*"
+  ],
   "lint": {
     "rules": {
-      "tags": ["fresh", "recommended"]
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
     }
   },
   "compilerOptions": {
-    "lib": ["dom", "dom.asynciterable", "dom.iterable", "deno.ns"],
+    "lib": [
+      "dom",
+      "dom.asynciterable",
+      "dom.iterable",
+      "deno.ns"
+    ],
     "jsx": "precompile",
     "jsxImportSource": "preact",
-    "jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head"]
+    "jsxPrecompileSkipElements": [
+      "a",
+      "img",
+      "source",
+      "body",
+      "html",
+      "head"
+    ]
   }
 }

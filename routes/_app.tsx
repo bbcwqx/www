@@ -10,7 +10,7 @@ export default define.page(function App({ Component, state }) {
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
-        <div class="min-h-screen container py-12">
+        <div class="container min-h-screen py-12">
           <Component />
         </div>
       </body>
