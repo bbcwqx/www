@@ -1,7 +1,14 @@
-import eslintPluginBetterTailwindcss from "eslint-plugin-better-tailwindcss";
+import parser from "@typescript-eslint/parser";
+import plugin from "eslint-plugin-better-tailwindcss";
 import { Linter } from "eslint";
 
 export default [
+  {
+    files: ["**/*.{ts,tsx,cts,mts}"],
+    languageOptions: {
+      parser,
+    },
+  },
   {
     files: ["**/*.{jsx,tsx}"],
     languageOptions: {
@@ -12,7 +19,7 @@ export default [
       },
     },
     plugins: {
-      "better-tailwindcss": eslintPluginBetterTailwindcss,
+      "better-tailwindcss": plugin,
     },
     rules: {
       "better-tailwindcss/enforce-consistent-class-order": ["warn", {

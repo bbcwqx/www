@@ -10,6 +10,7 @@
     "@fresh/plugin-tailwind": "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.9",
     "@preact/signals": "npm:@preact/signals@^2.2.1",
     "@tailwindcss/postcss": "npm:@tailwindcss/postcss@^4.1.10",
+    "@typescript-eslint/parser": "npm:@typescript-eslint/parser@^8.39.1",
     "basecoat-css": "npm:basecoat-css@^0.3.1",
     "eslint": "npm:eslint@^9.33.0",
     "eslint-plugin-better-tailwindcss": "npm:eslint-plugin-better-tailwindcss@^3.7.4",
