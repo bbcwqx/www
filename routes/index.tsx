@@ -4,10 +4,13 @@ export default define.page(function Home() {
   return (
     <div class="mx-auto">
       <div class="grid grid-cols-3 gap-4 md:grid-cols-6">
-        <img
-          class="aspect-square rounded object-cover"
-          src="https://cdn.bsky.app/img/avatar/plain/did:plc:rcjhtxh5v4mwvrbezap3hixf/bafkreib5f2vynlmo3aa6napzkhbrykkpmxwz7uks3j5h244okbax5e6xp4@jpeg"
-        />
+        <div data-tooltip="it me">
+          <img
+            alt="profile picture"
+            class="aspect-square rounded object-cover"
+            src="https://cdn.bsky.app/img/avatar/plain/did:plc:rcjhtxh5v4mwvrbezap3hixf/bafkreib5f2vynlmo3aa6napzkhbrykkpmxwz7uks3j5h244okbax5e6xp4@jpeg"
+          />
+        </div>
         <div class="flex aspect-square items-center justify-center rounded bg-amber-300 dark:bg-amber-500">
           <p class="text-3xl font-extrabold">tile 1</p>
         </div>
