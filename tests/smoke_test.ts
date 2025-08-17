@@ -1,6 +1,6 @@
 import { assertEquals, assertExists } from "jsr:@std/assert";
 
-Deno.test("Serve", async () => {
+Deno.test("server", async () => {
   const serverProcess = new Deno.Command(Deno.execPath(), {
     args: ["task", "start"],
   }).spawn();
