@@ -1,3 +1,4 @@
+import Guestbook from "../islands/guestbook.tsx";
 import { define } from "../utils.ts";
 
 export default define.page(function Home() {
@@ -26,8 +27,8 @@ export default define.page(function Home() {
           >
           </iframe>
         </div>
-        <div class="col-span-3 row-span-2 flex aspect-[3/2] items-center justify-center rounded bg-pink-300 dark:bg-pink-600">
-          <p class="text-3xl font-extrabold">tile 3</p>
+        <div class="col-span-3 row-span-2 aspect-[3/2] overflow-scroll rounded bg-muted p-4">
+          <Guestbook post={Deno.env.get("BLUESKY_GUESTBOOK_URI")!} />
         </div>
         <div class="flex aspect-square items-center justify-center rounded bg-pink-400 dark:bg-pink-700">
           <p class="text-3xl font-extrabold">tile 4</p>

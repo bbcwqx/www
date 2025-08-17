@@ -11,7 +11,7 @@ export default define.page(function App({ Component, state }) {
       </head>
       <body>
         <div class="container min-h-screen py-12">
-          <div className="alert mb-8 rounded bg-amber-500/12 p-4 font-semibold text-yellow-700 dark:text-yellow-500">
+          <div className="alert mb-8 rounded bg-amber-500/12 p-4 font-medium text-yellow-700 dark:text-yellow-500">
             <h2>🚧 my personal website - under construction</h2>
           </div>
           <Component />
