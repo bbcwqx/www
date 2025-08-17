@@ -148,7 +148,7 @@ export default function Guestbook({ post }: { post: string }) {
         <div class="mb-6">
           <p class="text-2xl font-bold">say hi 👋</p>
           <p class="text-muted-foreground">
-            leave a comment {thread.value
+            leave a comment on {thread.value
               ? (
                 <a
                   href={`https://bsky.app/profile/${thread.value.post?.author?.did}/post/${
@@ -158,10 +158,10 @@ export default function Guestbook({ post }: { post: string }) {
                   rel="noopener noreferrer"
                   class="font-medium text-blue-500 hover:underline"
                 >
-                  here
+                  bluesky
                 </a>
               )
-              : <span class="font-medium">here</span>} on bluesky
+              : <span class="font-medium">bluesky</span>}
           </p>
         </div>
 

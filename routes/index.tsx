@@ -24,6 +24,7 @@ export default define.page(function Home() {
             allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
             sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
             src="https://embed.music.apple.com/us/song/zissou/1825870058?theme=auto"
+            title="Zissou - Apple Music"
           >
           </iframe>
         </div>
