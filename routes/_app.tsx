@@ -11,7 +11,6 @@ export default define.page(function App({ Component, state }) {
           content="personal website of black bean crunchwrap queen"
         />
         <title>{state.title ?? "Hi, I'm Cat"}</title>
-        <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
         <div class="container min-h-screen py-12">
