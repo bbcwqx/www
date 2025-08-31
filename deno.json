@@ -1,23 +1,23 @@
 {
   "tasks": {
     "check": "deno fmt --check . && deno lint . && deno check",
-    "dev": "deno run -A --env-file --watch=static/,routes/ dev.ts",
-    "build": "deno run -A dev.ts build",
-    "start": "deno serve -A _fresh/server.js",
+    "dev": "deno run -A --env-file vite",
+    "build": "vite build",
+    "preview": "deno serve -A --env-file _fresh/server.js",
     "update": "deno run -A -r jsr:@fresh/update ."
   },
   "imports": {
-    "@fresh/plugin-tailwind": "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.9",
-    "@preact/signals": "npm:@preact/signals@^2.2.1",
-    "@tailwindcss/postcss": "npm:@tailwindcss/postcss@^4.1.10",
-    "@typescript-eslint/parser": "npm:@typescript-eslint/parser@^8.39.1",
-    "basecoat-css": "npm:basecoat-css@^0.3.1",
-    "eslint": "npm:eslint@^9.33.0",
-    "eslint-plugin-better-tailwindcss": "npm:eslint-plugin-better-tailwindcss@^3.7.4",
-    "fresh": "jsr:@fresh/core@^2.0.0-alpha.57",
-    "preact": "npm:preact@^10.27.0",
-    "tailwindcss": "npm:tailwindcss@^4.1.10",
-    "postcss": "npm:postcss@^8.5.6"
+    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^0.9.6",
+    "@preact/signals": "npm:@preact/signals@^2.3.1",
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.12",
+    "@typescript-eslint/parser": "npm:@typescript-eslint/parser@^8.41.0",
+    "basecoat-css": "npm:basecoat-css@^0.3.2",
+    "eslint": "npm:eslint@^9.34.0",
+    "eslint-plugin-better-tailwindcss": "npm:eslint-plugin-better-tailwindcss@^3.7.6",
+    "fresh": "jsr:@fresh/core@^2.0.0-beta.1",
+    "preact": "npm:preact@^10.27.1",
+    "tailwindcss": "npm:tailwindcss@^4.1.12",
+    "vite": "npm:vite@^7.1.3"
   },
   "nodeModulesDir": "auto",
   "exclude": [
@@ -46,7 +46,15 @@
       "source",
       "body",
       "html",
-      "head"
+      "head",
+      "title",
+      "meta",
+      "script",
+      "link",
+      "style",
+      "base",
+      "noscript",
+      "template"
     ]
   }
 }

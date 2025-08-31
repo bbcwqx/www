@@ -28,7 +28,7 @@ export default [
     },
     settings: {
       "better-tailwindcss": {
-        entryPoint: "static/styles.css",
+        entryPoint: "assets/styles.css",
       },
     },
   },
