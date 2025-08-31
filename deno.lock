@@ -8,6 +8,7 @@
     "jsr:@fresh/core@^2.0.0-alpha.60": "2.0.0-beta.1",
     "jsr:@fresh/core@^2.0.0-beta.1": "2.0.0-beta.1",
     "jsr:@fresh/plugin-vite@~0.9.6": "0.9.6",
+    "jsr:@std/assert@*": "1.0.14",
     "jsr:@std/bytes@^1.0.6": "1.0.6",
     "jsr:@std/encoding@1": "1.0.10",
     "jsr:@std/encoding@^1.0.10": "1.0.10",
@@ -97,6 +98,12 @@
         "npm:@mjackson/node-fetch-server",
         "npm:@prefresh/vite",
         "npm:vite"
+      ]
+    },
+    "@std/assert@1.0.14": {
+      "integrity": "68d0d4a43b365abc927f45a9b85c639ea18a9fab96ad92281e493e4ed84abaa4",
+      "dependencies": [
+        "jsr:@std/internal"
       ]
     },
     "@std/bytes@1.0.6": {

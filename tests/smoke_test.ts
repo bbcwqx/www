@@ -2,7 +2,7 @@ import { assertEquals, assertExists } from "jsr:@std/assert";
 
 Deno.test("server", async () => {
   const serverProcess = new Deno.Command(Deno.execPath(), {
-    args: ["task", "start"],
+    args: ["task", "preview"],
   }).spawn();
 
   await new Promise((resolve) => setTimeout(resolve, 200));
