@@ -1,6 +1,5 @@
 {
   "imports": {
-    "@tailwindcss/browser": "https://esm.sh/@tailwindcss/browser@4.1.14",
-    "tailwindcss": "https://esm.sh/tailwindcss@4.1.14"
+    "tailwindcss": "npm:tailwindcss@4.1.14"
   }
 }

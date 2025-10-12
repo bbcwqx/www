@@ -1,13 +1,26 @@
 {
   "tasks": {
-    "dev": "deno run --allow-net --allow-read=www --allow-env=TERM jsr:@bbcwqx/live-server www"
+    "dev": {
+      "dependencies": [
+        "dev:css",
+        "dev:serve"
+      ]
+    },
+    "dev:css": "deno run -A --no-lock npm:@tailwindcss/cli -i app.css -o www/styles.css --watch",
+    "dev:serve": "deno run --allow-net --allow-read=www --allow-env=TERM jsr:@bbcwqx/live-server www"
   },
   "importMap": "www/import_map.json",
+  "nodeModulesDir": "auto",
   "compilerOptions": {
     "lib": [
       "dom",
       "dom.asynciterable",
       "dom.iterable"
+    ]
+  },
+  "fmt": {
+    "exclude": [
+      "**/*.css"
     ]
   },
   "lock": false

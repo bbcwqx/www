@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --border: oklch(0.922 0 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --primary: oklch(0.922 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --border: oklch(1 0 0 / 10%);
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@utility bg-background {
+  background-color: var(--background);
+}
+
+@utility bg-primary {
+  background-color: var(--primary);
+}
+
+@utility bg-secondary {
+  background-color: var(--secondary);
+}
+
+@utility bg-muted {
+  background-color: var(--muted);
+}
+
+@utility text-foreground {
+  color: var(--foreground);
+}
+
+@utility text-primary {
+  color: var(--primary);
+}
+
+@utility text-primary-foreground {
+  color: var(--primary-foreground);
+}
+
+@utility text-secondary-foreground {
+  color: var(--secondary-foreground);
+}
+
+@utility text-muted-foreground {
+  color: var(--muted-foreground);
+}
+
+@utility border-border {
+  border-color: var(--border);
+}

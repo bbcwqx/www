@@ -10,7 +10,7 @@
     "tailwindcss-language-server": {
       "settings": {
         "experimental": {
-          "configFile": "dev.css"
+          "configFile": "app.css"
         }
       }
     }
